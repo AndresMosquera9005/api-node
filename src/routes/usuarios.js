@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const userModel = require('../Models/user')
 
-router.post('/crear', (req,res)=> {
-    console.log("andru.post...",req.body);
-    res.send({"status":"creado"})
+router.post('/crear', async (req,res)=> {
+    return await userModel.create(req.body);
 })
 
 router.get('/:id', (req, res) => {

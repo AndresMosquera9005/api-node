@@ -24,7 +24,6 @@ var schema = new mongoose.Schema({
     lastName: {
         type: String,
         default: ''
-    },s
-});
-var user = new mongoose.model('User', schema);
-module.exports = user;
+    },
+}); 
+module.exports = mongoose.model('User', schema);;
