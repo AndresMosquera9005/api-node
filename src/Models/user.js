@@ -13,7 +13,7 @@ var schema = new mongoose.Schema({
         type: String,
         default: ''
     },
-    firstName: {
+    name: {
         type: String,
         default: ''
     },
@@ -26,4 +26,4 @@ var schema = new mongoose.Schema({
         default: ''
     },
 }); 
-module.exports = mongoose.model('User', schema);;
+module.exports = mongoose.model('User', schema);

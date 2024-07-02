@@ -24,5 +24,5 @@ app.use('/api/usuarios', require('./routes/usuarios'));
 
 
 app.listen(3000, () => {
-    console.log("andru desde app listen");
+    console.log("Hola Andru desde app listen");    
 });
