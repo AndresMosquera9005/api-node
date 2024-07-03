@@ -8,7 +8,7 @@ router.post('/crear', async (req,res)=> {
         console.log(response);
         res.status(200).send({'status':'creado'})
     } catch (error) {
-        res.status(500).send({'errores': error,'status':'creado'})
+        res.status(400).send({'errores': error})
     }
 })
 
